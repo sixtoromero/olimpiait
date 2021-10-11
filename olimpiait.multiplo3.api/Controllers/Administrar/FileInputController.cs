@@ -21,7 +21,6 @@ namespace olimpiait.multiplo3.api.Controllers.Administrar
         private readonly IWebHostEnvironment env;
         private readonly ILogger<FileInputController> logger;
 
-
         public FileInputController(IWebHostEnvironment env, ILogger<FileInputController> logger, IFileInputRepository fileInput)
         {
             this.env = env;

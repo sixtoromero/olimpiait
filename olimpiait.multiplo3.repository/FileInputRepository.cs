@@ -27,7 +27,7 @@ namespace olimpiait.multiplo3.repository
 
             try
             {
-                StreamReader reader = new StreamReader(pathRead);                
+                StreamReader reader = new StreamReader(pathRead);
                 string lineReady;
                 string input = string.Empty;
 
@@ -54,7 +54,6 @@ namespace olimpiait.multiplo3.repository
                     }
                 }
 
-
                 using (StreamWriter writetext = new StreamWriter(pathOut))
                 {
                     writetext.WriteLine(input);
@@ -70,8 +69,5 @@ namespace olimpiait.multiplo3.repository
                 return ex.Message;
             }            
         }
-
-
-
     }
 }

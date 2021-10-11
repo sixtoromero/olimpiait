@@ -22,14 +22,47 @@ namespace olimpiait.factura.api.Controllers
         }
 
         [HttpPost]
+        public IActionResult RespuestasFacturas(IEnumerable<FacturaElectronicaModel> facturas)
+        {
+            Response<decimal> resp = new Response<decimal>();
+            try
+            {
+                resp = facturaElectronica.RespuestasFacturas(facturas);
+                if (resp.IsSuccess)
+                {
+                    return Ok(resp);
+                }
+                else
+                {
+                    return BadRequest(resp);
+                }
+            }
+            catch (Exception ex)
+            {
+                resp.IsSuccess = false;
+                resp.Message = ex.Message;
+                resp.Data = 0;
+
+                return BadRequest(resp);
+            }
+        }
+
+        [HttpPost]
         public IActionResult ValidacionFactura(FacturaElectronicaModel model)
         {
             Response<FacturaElectronicaModel> resp = new Response<FacturaElectronicaModel>();
 
             try
-            {                
+            {
                 resp = facturaElectronica.ValidacionFacturaElectronica(model);
-                return Ok(resp);
+                if (resp.IsSuccess)
+                {
+                    return Ok(resp);
+                }
+                else
+                {
+                    return BadRequest(resp);
+                }
             }
             catch (Exception ex)
             {
@@ -40,5 +73,6 @@ namespace olimpiait.factura.api.Controllers
                 return BadRequest(resp);
             }
         }
+
     }
 }

@@ -12,26 +12,25 @@ namespace olimpiait.factura.transversal.Helpers
     {
         public string EsFacturaValida(FacturaElectronicaModel model)
         {
-            if (!(Regex.IsMatch(model.Id.ToString(), @"^[0-9]+$")))
+            if (model.Id < 0)
             {
-                return "FORMATO_INVALIDO_ID";
+                return "El Id de la factura no tiene un valor entero válido.\n";
             }
 
             if (!(Regex.IsMatch(model.Nit.ToString(), @"^[0-9]+$")))
             {
-                return "FORMATO_INVALIDO_NIT";
+                return "El Nit de la factura no tiene un formato correcto.\n";
             }
 
 
-            if (!(model.ValorTotal >= 0))
+            if (model.ValorTotal < 0)
             {
-                return "VALOR_NEGATIVO_TOTAL";
+                return "El valor de la factura nunca debe ser negativo.\n";
             }
-
-
-            if (!((model.PorcentajeIVA >= 0) && (model.PorcentajeIVA <= 100)))
+            
+            if (model.PorcentajeIVA < 0 || model.PorcentajeIVA > 100)
             {
-                return "IVA_INVALIDO";
+                return "El Iva de la factura debe estar entre 0(%) y 100(%)\n";
             }
 
             return "success";

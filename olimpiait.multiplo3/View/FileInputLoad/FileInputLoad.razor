@@ -1,5 +1,5 @@
-﻿@page "/fileupload/process"
-
+﻿@*@page "/fileupload/process"*@
+@page  "/"
 @inject IJSRuntime js
 @inject IFileReaderService fileReader
 @inject olimpiait.multiplo3.ViewModel.FileInputLoad.Interfaces.IFileInputLoadViewModel fileInputModel
@@ -24,7 +24,7 @@
     <MatTable Items="@sortedData" class="mat-elevation-z5" ShowPaging="true" UseSortHeaderRow="true" Style="width: 100%;">
         <MatTableHeader>
             <MatSortHeaderRow SortChanged="@SortData">
-                <MatSortHeader SortId="Archivo"><span style="width:450px">Archivo</span></MatSortHeader>                                
+                <MatSortHeader SortId="Archivo"><span style="width:450px">Archivo</span></MatSortHeader>
                 <MatSortHeader SortId="Fecha"><span style="width:450px">Fecha</span></MatSortHeader>
                 <MatSortHeader><span style="width:100px"></span></MatSortHeader>
             </MatSortHeaderRow>

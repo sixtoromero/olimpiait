@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "multiplo3", "multiplo3", "{351F8059-2E56-4BE6-B4FA-FB948F107329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "olimpiait.multiplo3", "olimpiait.multiplo3\olimpiait.multiplo3.csproj", "{82B1D6DD-95E1-41A3-AB27-9BAF85308A51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "olimpiait.multiplo3.api", "olimpiait.multiplo3.api\olimpiait.multiplo3.api.csproj", "{D64EE6CC-B687-4D9B-A920-EA14624E34AA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FFBB87AA-2D4F-42C8-B910-2331584ECE07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{D796FD06-224B-4E59-8379-1768AF544608}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{CCD12058-C9F1-4739-A25A-74EF091499DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{E63D6ED3-E45F-476A-9FB3-A4B025254EDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "olimpiait.multiplo3.entity", "olimpiait.multiplo3.entity\olimpiait.multiplo3.entity.csproj", "{2FD5F2B0-DDD7-4918-97FF-1BE43A22114D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "olimpiait.multiplo3.repository", "olimpiait.multiplo3.repository\olimpiait.multiplo3.repository.csproj", "{711E7191-B987-4CEB-BDF8-0E5BCC347F8A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82B1D6DD-95E1-41A3-AB27-9BAF85308A51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B1D6DD-95E1-41A3-AB27-9BAF85308A51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B1D6DD-95E1-41A3-AB27-9BAF85308A51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B1D6DD-95E1-41A3-AB27-9BAF85308A51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D64EE6CC-B687-4D9B-A920-EA14624E34AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D64EE6CC-B687-4D9B-A920-EA14624E34AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D64EE6CC-B687-4D9B-A920-EA14624E34AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D64EE6CC-B687-4D9B-A920-EA14624E34AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FD5F2B0-DDD7-4918-97FF-1BE43A22114D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD5F2B0-DDD7-4918-97FF-1BE43A22114D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD5F2B0-DDD7-4918-97FF-1BE43A22114D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD5F2B0-DDD7-4918-97FF-1BE43A22114D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711E7191-B987-4CEB-BDF8-0E5BCC347F8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711E7191-B987-4CEB-BDF8-0E5BCC347F8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711E7191-B987-4CEB-BDF8-0E5BCC347F8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711E7191-B987-4CEB-BDF8-0E5BCC347F8A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82B1D6DD-95E1-41A3-AB27-9BAF85308A51} = {D796FD06-224B-4E59-8379-1768AF544608}
+		{D64EE6CC-B687-4D9B-A920-EA14624E34AA} = {FFBB87AA-2D4F-42C8-B910-2331584ECE07}
+		{FFBB87AA-2D4F-42C8-B910-2331584ECE07} = {351F8059-2E56-4BE6-B4FA-FB948F107329}
+		{D796FD06-224B-4E59-8379-1768AF544608} = {351F8059-2E56-4BE6-B4FA-FB948F107329}
+		{CCD12058-C9F1-4739-A25A-74EF091499DF} = {351F8059-2E56-4BE6-B4FA-FB948F107329}
+		{E63D6ED3-E45F-476A-9FB3-A4B025254EDF} = {351F8059-2E56-4BE6-B4FA-FB948F107329}
+		{2FD5F2B0-DDD7-4918-97FF-1BE43A22114D} = {CCD12058-C9F1-4739-A25A-74EF091499DF}
+		{711E7191-B987-4CEB-BDF8-0E5BCC347F8A} = {E63D6ED3-E45F-476A-9FB3-A4B025254EDF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF750CC0-BF1E-4CB9-934F-9A54975913BA}
+	EndGlobalSection
+EndGlobal
